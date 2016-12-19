@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>[%thread] [%level] [%logger] %msg%n</Pattern>
+        </encoder>
+    </appender>
+    <logger name="com.hybris.poc" level="debug" />
+    <logger name="com.netflix.dyno.jedis" level="debug" />
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
